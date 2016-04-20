@@ -3,115 +3,107 @@
 <head>
 <meta charset="utf-8">
 <title>Datos del equipo</title>
-<!--grupo css-->
-<link rel="stylesheet" href="css/temasapp2.min.css"/>
-<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
-<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
-<!--grupo javascript-->
+<!--Grupo CSS-->
+<linkhref="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css">
+<link rel="stylesheet"href="css/jquery.mobile.structure-1.4.5.min.css">
+<link rel="stylesheet" type="text/css" href="css/temasapp2.min.css">
+<!--Grupo JavaScript-->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
-<script src="js/aciones.js" type="text/javascript"></script>
+<script src="js/acciones.js" type="text/javascript"></script>
 
-<script src="phonegap.js"></script><!--necesario-->
+<script src="phonegap.js"></script><!--Necesario*/-->
+
 </head>
 <body>
-<div data-role="page" id="Principal" data-theme="b">
-<div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
-  <h1>datos del dispositivo</h1>
+<div data-role="page" id="principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Datos del Dispositivo</h1>
+ </div><!--Data role header-->
+ 
+ <div data-role="main" class="ui-content">
+  <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#page2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Dispositivo</h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#page3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Eventos</h2>
+    </a>
+    </li>
+    </ul>
   </div>
-  
+ </div><!--Data Role main class ui content-->
+ 
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Cesar Arturo Baez Alonso</h4>
+ <img src="imagenes/windows.png" width="56" height="46">
+ </div>
+</div><!--Div data rol page id principal-->
+
+<div data-role="page" id="page2" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Dispositivo</h1>
+ </div>
   <div data-role="main" class="ui-content">
-      <div>
-      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
-<li class="ui-first-child ui-last-child">
-      
-   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-   <h2> Dispositivo </h2>
-   <p>se muestra los datos de tu dispositivo movil</p>
-   </a>
-   </li>
-   <li class="ui-first-child ui-last-child">
-   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
-   <h2> Eventos </h2>
-   <p>se muestra el historial de la app</p>
-   </a>
-   </li>
-   </ul>
-   </div>
-   </div>
-   
-   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
-   <h4>Cesar Arturo Baez Alonso</h4>
-   <img src="imagenes/windows.png" width="46" height="46">
-   </div>
-   </div>
-   
-   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
- <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
-   <center>
-   <h1> dispositivo</h1>
-</div>
-<div data-role="main" class="ui-content">
-<div id="disp">
+   <div id="disp">
 <table width="200" border="1" id="datos">
-<tr>
-<td width="83">Datos</td>
-<td width="101">Dispositivo</td>
-</tr>
-  <tr>
-<td>Nombre</td>
-<td>&nbsp;</td>
-</tr>
-  <tr>
-<td>Phonegap</td>
-<td>&nbsp;</td>
-</tr>
-  <tr>
-<td>Plataforma</td>
-<td>&nbsp;</td>
-</tr>
-  <tr>
-<td>Version</td>
-<td>&nbsp;</td>
-</tr>
-  <tr>
-<td>UUID</td>
-<td>&nbsp;</td>
-</tr>
+ <tr>
+  <td width="83">Datos</td>
+  <td width="101">Dispositivo</td>
+ </tr>
+ <tr>
+  <td>Nombre</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>PhoneGap</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>Plataforma</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>Version</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>UUID</td>
+  <td>&nbsp;</td>
+ </tr>
 </table>
+ </div>
 </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Cesar Arturo Baez Alonso</h4>
+ <img src="imagenes/windows.png" width="56" height="46">
+ </div>
 </div>
 
-    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
-   <h4>Cesar Arturo Baez Alonso</h4>
-   <img src="imagenes/windows.png" width="46" height="46">
-   </div>
-   </div>
-   
-   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
-    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b" 
-  <h1> Eventos</h1>
+<div data-role="page" id="page3" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Eventos</h1>
+ </div>
+  <div data-role="main" class="ui-content">
+   <div>
+    <h2>Historial</h2>
+   <ul id="eHistoria">
+   </ul>
+  </div>
+ </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+ <h4>Cesar Arturo Baez Alonso </h4>
+ <img src="imagenes/windows.png" width="56" height="46">
+  </div>
+ </div>
 </div>
- <div data-role="main" class="ui-content">
- <div>
-  <h2>Historial</h2>
-  <ul id="eHistoria">
-  </ul>
-  </div>
-  </div>
-   <div data-role="footer" align="center" data-theme="b" data-position="fixed">
-   <h4>Cesar Arturo Baez Alonso</h4>
-   <img src="imagenes/windows.png" width="46" height="46">
-   </div>
-   </div>
-   </div>
 </body>
 </html>
-
-
-
-
-
 
 
 
